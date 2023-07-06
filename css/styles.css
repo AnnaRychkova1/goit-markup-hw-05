@@ -1048,7 +1048,6 @@ input {
     background-color: var(--text-hover-link-blue);
     border: none;
     fill: var(--bg-btn-filtres);
-}
 
 .modal-form-checkbox:checked+.modal-form-custom-checkbox>.modal-form-checkbox-icon {
     opacity: 0;
