@@ -607,16 +607,18 @@ input {
 }
 
 .footer-form-input {
-    width: 100%;
+    width: 264px;
     height: 40px;
     padding: 8px 16px;
 
     font-size: 12px;
     color: var(--text-white-color);
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 
     border-radius: 4px;
     border: 1px solid var(--text-button-white-color);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     background-color: transparent;
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -646,7 +648,7 @@ input {
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    min-width: 165px;
 
     border-radius: 4px;
     background: var(--bg-btn-hero);
@@ -668,20 +670,9 @@ input {
 }
 
 
-.subscribe-form-icon {}
-
-/* 
-
-.modal-form-input::placeholder {
-    opacity: 0;
-    transition: opacity 250ms ease 300ms;
+.subscribe-form-icon {
+    margin-left: 16px;
 }
-
-.modal-form-input:focus::placeholder {
-    opacity: 1;
-}
-
-*/
 
 
 
@@ -834,7 +825,7 @@ input {
     top: 50%;
     left: 50%;
 
-    padding: 24px;
+    padding: 72px 24px 24px 24px;
 
     width: 408px;
     min-height: 584px;
@@ -884,7 +875,6 @@ input {
 .modal-caption {
     display: block;
     width: 360px;
-    margin-top: 48px;
     margin-bottom: 16px;
 
     color: var(--text-secondary-color);
@@ -896,6 +886,10 @@ input {
 }
 
 .modal-form {}
+
+.modal_container {
+    margin-bottom: 8px;
+}
 
 .modal-form-field {
     position: relative;
